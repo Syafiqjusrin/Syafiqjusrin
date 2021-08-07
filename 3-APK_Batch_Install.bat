@@ -9,16 +9,16 @@ echo Press Ctr+C to cancel at any time
 echo.  
 echo Enter The Firesticks IP then press ENTER  
 echo ----------------------------------------
-set /p IP=IP: 
-echo.  
+set /p IP=IP: 4
+echo. Batch 4 
 echo Connecting to Firestick. Please wait..
-echo.  
+echo. Batch installation 1
 echo ----------------------- 
-echo.  
+echo.  Batch uninstallation 4
 adb.exe connect %IP%
-echo.  
+echo. Batch installation 1 
 echo ----------------------- 
-echo.  
+echo.  Batch uninstallation 4
 echo If the list below says Unauthorized do not go forward until authorized. 
 echo Check your Firestick for the ADB Authorization prompt. 
 echo. 
@@ -54,9 +54,9 @@ goto :DONE
 
 :NODIR
 if not exist %BATCHAPKDIR% mkdir %BATCHAPKDIR%
-echo. 
+echo. Batch installation 1
 echo ----------------------- 
-echo. 
+echo. Batch uninstallation 4
 echo The directory %BATCHAPKDIR% didn't exist and has now been created.
 echo You can now add APK files to the %BATCHAPKDIR% directory and proceed. 
 echo. 
@@ -79,11 +79,11 @@ echo.
 echo ----------------------- 
 echo.  
 echo Disconnecting from %IP%....
-echo.  
+echo. Batch 4
 echo ----------------------- 
 echo.  
 adb.exe disconnect %IP%
-echo.  
+echo.  Batch 4
 echo ----------------------- 
 echo.  
 echo Check for other errors above then press spacebar to Exit..
